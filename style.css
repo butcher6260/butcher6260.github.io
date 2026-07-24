@@ -1,20 +1,168 @@
-/* User Information Form */
+/* =========================
+   General Page
+========================= */
 
-#userInfo {
-    max-width: 700px;
-    margin: 0 auto 40px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
-#userInfo label {
-    font-weight: bold;
+
+/* =========================
+   Header
+========================= */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-#userInfo input {
-    padding: 10px;
+.page-header h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.page-header h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.page-header p {
+    margin: 0;
+    color: #666;
     font-size: 16px;
+}
+
+
+/* =========================
+   Appointment List
+========================= */
+
+#dates {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/* Each day section */
+
+.day-section {
+    margin-bottom: 35px;
+}
+
+
+/* Date heading */
+
+.day-section h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 6px;
+}
+
+
+/* =========================
+   Appointment Cards
+========================= */
+
+.appointment-option {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 10px;
+
+    background-color: white;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.15s ease;
+}
+
+.appointment-option:hover {
+    background-color: #f0f6ff;
+    border-color: #4a90e2;
+    transform: translateY(-1px);
+}
+
+
+/* Bigger checkbox */
+
+.appointment-option input {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+/* Time text */
+
+.appointment-option span {
+    font-size: 18px;
+}
+
+
+/* =========================
+   Submit Button
+========================= */
+
+#submitAppointment {
+    display: block;
+
+    margin: 40px auto;
+
+    padding: 14px 28px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #4a90e2;
+    color: white;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+#submitAppointment:hover {
+    background-color: #357abd;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        margin: 20px;
+    }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
+
+    .page-header h2 {
+        font-size: 20px;
+    }
+
+    .appointment-option {
+        padding: 12px;
+    }
+
+    .appointment-option span {
+        font-size: 16px;
+    }
+
 }
