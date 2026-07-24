@@ -1,27 +1,20 @@
-.page-header {
-    background: #2c6e49;      /* Change to any color */
-    color: white;
-    padding: 20px 30px;
+/* User Information Form */
 
+#userInfo {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
     display: flex;
-    align-items: center;
-    gap: 20px;
-
-    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    flex-direction: column;
+    gap: 12px;
 }
 
-.logo {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
+#userInfo label {
+    font-weight: bold;
 }
 
-.header-text h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-.header-text p {
-    margin-top: 5px;
-    opacity: .9;
+#userInfo input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
