@@ -1,60 +1,79 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f6f8;
+    font-family: Arial, sans-serif;
+    margin: 40px;
 }
 
-.page-header {
-    background: #005a43; /* Orchard Park Library green */
-    color: white;
-    padding: 20px 40px;
 
+/* Main appointment area */
+#dates {
+    margin-top: 20px;
+}
+
+
+/* Each day section */
+.day-section {
+    margin-bottom: 30px;
+}
+
+
+/* Date heading */
+.day-section h3 {
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+
+/* Individual appointment boxes */
+.appointment-option {
     display: flex;
     align-items: center;
-    gap: 20px;
-
-    box-shadow: 0 2px 8px rgba(0,0,0,.15);
-}
-
-.logo {
-    width: 90px;
-    height: 90px;
-    object-fit: contain;
-}
-
-.header-text h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-.header-text h2 {
-    margin: 8px 0;
-    font-size: 1.2rem;
-    font-weight: normal;
-}
-
-.header-text p {
-    margin: 0;
-    opacity: .9;
-}
-
-.container {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-#submitAppointment {
-    margin-top: 30px;
-    padding: 14px 28px;
-    font-size: 16px;
-    border: none;
+    gap: 12px;
+    padding: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 8px;
-    background: #005a43;
-    color: white;
+    cursor: pointer;
+    max-width: 300px;
+}
+
+
+/* Bigger checkbox */
+.appointment-option input {
+    width: 24px;
+    height: 24px;
     cursor: pointer;
 }
 
-#submitAppointment:hover {
-    background: #004232;
+
+/* Hover effect */
+.appointment-option:hover {
+    background-color: #f2f2f2;
+}
+
+
+/* Submit button */
+#submitAppointment {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Page headings */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
 }
